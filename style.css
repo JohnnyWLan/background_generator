@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(252, 252, 252));
+} 
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Ephesis', cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    text-decoration: wavy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-emphasis-color: rgb(98, 179, 55);
+    text-align: center;
+    border: 10px 5px;
+    margin: 5px 10px;
+    padding: 2px 2px;
+
+}
+
+.selectors {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   gap: 20px;
+   border:0px;
+   padding: 0px;
+   margin: 0px;
+     
+}
+
+input {
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.777);
+    border-bottom: 2px solid pink;
+	width: 400px;
+   margin-left: 25%;
+}
+
+#chicken {
+    text-align: center;
+}
