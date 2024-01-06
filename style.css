@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to left, rgb(0, 0, 0), rgb(252, 252, 252));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(252, 252, 252));
 } 
 
 h1 {
@@ -42,8 +42,4 @@ h3 {
     border-bottom: 2px solid pink;
 	width: 400px;
    margin-left: 25%;
-}
-
-#chicken {
-    text-align: center;
 }
