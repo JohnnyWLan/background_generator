@@ -17218,19 +17218,36 @@ var _= require('lodash');
 let css = document.querySelector("h3");
 let color1 = document.querySelector(".color1");
 let color2 = document.querySelector(".color2");
-let body = document.getElementById("gradient");
+let body = document.getElementById("#gradient");
+let button = document.querySelector("button");''
 
-console.log(css);
-console.log(color1);
-console.log(color2);
+function setGradient() {
+     body.style.background =
+     "linear-gradient(to right, "
+    +color1.value
+    + ", " 
+    + color2.value
+     + ")";
+     css.textContent = body.style.background + ";";
+}
+function setRandomGradient() {
+  body.style.background =
+    "linear-gradient(to right, " 
+    + generateRandomColors() 
+    +", "
+     +generateRandomColors();
+     + ")";
+}
 
-color1.addEventListener("input", function(){
-    console.log(color1.value);
-}) 
+function generateRandomColors() {
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  return "rgb(" + r + ", " + g + ", " + b + ")";
+}
 
-color2.addEventListener("input", function(){
-    console.log(color2.value);
-})
 
-
+color1.addEventListener("input", setGradient);
+color2.addEventListener("input", setGradient);
+button.addEventListener("click", setRandomGradient);
 },{"lodash":1}]},{},[2]);

@@ -18,12 +18,11 @@ function setGradient() {
 }
 function setRandomGradient() {
   body.style.background =
-    "linear-gradient(to right, " +
-    generateRandomColors() +
-    ", " +
-    generateRandomColors();
-
-  css.textContent = body.style.background + ";";
+    "linear-gradient(to right, " 
+    + generateRandomColors() 
+    +", "
+     +generateRandomColors();
+     + ")";
 }
 
 function generateRandomColors() {
